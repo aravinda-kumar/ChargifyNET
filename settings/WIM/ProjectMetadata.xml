@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectMetadataInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectName>chargify</ProjectName>
+  <DefaultIterationLength>14</DefaultIterationLength>
+  <ProjectStart>2010-03-05T00:00:00-05:00</ProjectStart>
+  <IterationList>
+    <IterationMetadataInfo>
+      <Id>167675</Id>
+      <Name>Chargify.NET 0.5</Name>
+      <Path>chargify\Chargify.NET 0.5</Path>
+      <StartDate>2010-02-19T00:00:00-05:00</StartDate>
+      <EndDate>2010-03-04T00:00:00-05:00</EndDate>
+      <Level>0</Level>
+      <PredecessorId xsi:nil="true" />
+      <ParentId>167634</ParentId>
+      <DurationDays>14</DurationDays>
+    </IterationMetadataInfo>
+    <IterationMetadataInfo>
+      <Id>168404</Id>
+      <Name>Chargify.NET 0.55</Name>
+      <Path>chargify\Chargify.NET 0.55</Path>
+      <StartDate>2010-03-05T00:00:00-05:00</StartDate>
+      <EndDate>2010-03-18T00:00:00-04:00</EndDate>
+      <Level>0</Level>
+      <PredecessorId xsi:nil="true" />
+      <ParentId>167634</ParentId>
+      <DurationDays>14</DurationDays>
+    </IterationMetadataInfo>
+  </IterationList>
+</ProjectMetadataInfo>
