@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4E445A8-21C9-445B-A3A0-D18A4CBD0F0B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChargifyNET</RootNamespace>
+    <AssemblyName>ChargifyNET</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\ChargifyNET.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>wallet.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adjustment.cs" />
+    <Compile Include="BillingManagementInfo.cs" />
+    <Compile Include="Charge.cs" />
+    <Compile Include="ChargifyBase.cs" />
+    <Compile Include="ChargifyConnect.cs" />
+    <Compile Include="ChargifyEntity.cs" />
+    <Compile Include="ChargifyException.cs" />
+    <Compile Include="ChargifyPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComponentAllocation.cs" />
+    <Compile Include="ComponentAttributes.cs" />
+    <Compile Include="ComponentInfo.cs" />
+    <Compile Include="Configuration\ChargifyAccountElement.cs" />
+    <Compile Include="Configuration\ChargifyAccountElementCollection.cs" />
+    <Compile Include="Configuration\ChargifyAccountRetrieverSection.cs" />
+    <Compile Include="Data\Controls\CountryDropDownList.cs" />
+    <Compile Include="Coupon.cs" />
+    <Compile Include="Credit.cs" />
+    <Compile Include="CreditCardAttributes.cs" />
+    <Compile Include="IMetadata.cs" />
+    <Compile Include="IMetadataResult.cs" />
+    <Compile Include="Metadata.cs" />
+    <Compile Include="MetadataResult.cs" />
+    <Compile Include="PaymentProfileBase.cs" />
+    <Compile Include="PaymentProfileView.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerAttributes.cs" />
+    <Compile Include="Data\CountryNameLookup.cs" />
+    <Compile Include="IAdjustment.cs" />
+    <Compile Include="IBillingManagementInfo.cs" />
+    <Compile Include="ICharge.cs" />
+    <Compile Include="IChargifyConnect.cs" />
+    <Compile Include="IComponent.cs" />
+    <Compile Include="IComponentAllocation.cs" />
+    <Compile Include="IComponentAttributes.cs" />
+    <Compile Include="ICoupon.cs" />
+    <Compile Include="ICredit.cs" />
+    <Compile Include="IComponentInfo.cs" />
+    <Compile Include="IInvoice.cs" />
+    <Compile Include="IInvoicePaymentAndCredit.cs" />
+    <Compile Include="IMigration.cs" />
+    <Compile Include="Invoice.cs" />
+    <Compile Include="IPaymentProfileAttributes.cs" />
+    <Compile Include="IProductFamilyAttributes.cs" />
+    <Compile Include="IRefund.cs" />
+    <Compile Include="ISiteStatistics.cs" />
+    <Compile Include="IStatement.cs" />
+    <Compile Include="ITransaction.cs" />
+    <Compile Include="IUsage.cs" />
+    <Compile Include="ICreditCardAttributes.cs" />
+    <Compile Include="IPaymentProfileBase.cs" />
+    <Compile Include="IPaymentProfileView.cs" />
+    <Compile Include="ICustomer.cs" />
+    <Compile Include="ICustomerAttributes.cs" />
+    <Compile Include="IProduct.cs" />
+    <Compile Include="IProductFamily.cs" />
+    <Compile Include="ISubscription.cs" />
+    <Compile Include="Component.cs" />
+    <Compile Include="Json\JsonException.cs" />
+    <Compile Include="Json\JsonString.cs" />
+    <Compile Include="Json\JsonObject.cs" />
+    <Compile Include="Json\JsonNumber.cs" />
+    <Compile Include="Json\JsonHelper.cs" />
+    <Compile Include="Json\JsonBoolean.cs" />
+    <Compile Include="Json\JsonArray.cs" />
+    <Compile Include="Json\JsonValue.cs" />
+    <Compile Include="Json\XmlToJson.cs" />
+    <Compile Include="Migration.cs" />
+    <Compile Include="PaymentProfileAttributes.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductFamily.cs" />
+    <Compile Include="ProductFamilyAttributes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Refund.cs" />
+    <Compile Include="SiteStatistics.cs" />
+    <Compile Include="Statement.cs" />
+    <Compile Include="Subscription.cs" />
+    <Compile Include="SubscriptionPostbackHandler.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="Usage.cs" />
+    <Compile Include="UsefulExtensions.cs" />
+    <Compile Include="WebhookHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\ISO_3166-1_list_en.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="wallet.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Chargify.NET.nuspec" />
+    <None Include="web.config.transform" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
